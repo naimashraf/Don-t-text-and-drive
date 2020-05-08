@@ -54,35 +54,21 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 92px;
+  height: 110px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 22px 0;
-  background: #f9f9f9;
+  padding: 25px 0;
+  background: #ffffff;
 }
 
-#header .logo h1 {
-  font-size: 30px;
-  margin: 0;
-  padding: 6px 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color:#333;
-  font-family: 'Roboto', sans-serif;
-}
 
-#header .logo h1 a, #header .logo h1 a:hover {
-  color: #333;
-  text-decoration: none;
-}
 
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 100px;
+  margin-top:-26px;
 }
 
 @media (max-width: 992px) {
@@ -111,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  padding: 8px 0px 12px 0;
+  padding: 14px 0px 10px 0;
   margin-right:10px;
   transition: 0.3s;
   font-size: 16px;
@@ -422,35 +408,54 @@ span.heading-separator-horizontal{
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about h3 {
-  font-weight: 400;
-  font-size: 34px;
-  color: #21413c;
+
+.about-section-2 {
+  padding: 150px 0;
+  background: rgba(0,0,0,0.3);
+  background-image: url('../img/about.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: block;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+}
+.about-section-2:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  content: '';
 }
 
-.about .icon-box {
-  margin-top: 44px;
+.about-section-2 .content h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #FFFFFF;
+  text-transform:uppercase;
+  letter-spacing:0.1px;
 }
 
-.about .icon-box i {
-  font-size: 48px;
-  float: left;
-  color: #FF0000;
+.about-section-2 .content h4 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #FFFFFF;
+  text-transform:uppercase;
+  word-spacing:2px;
 }
 
-.about .icon-box h4 {
-  font-size: 22px;
-  font-weight: 500;
-  margin-left: 60px;
-  color: #21413c;
+.about-section-2 .content p {
+  margin-bottom: 0px;
+  color: #FFF;
 }
-
-.about .icon-box p {
-  font-size: 15px;
-  color: #848484;
-  margin-left: 60px;
-}
-
 
 
 /*----- CTA VIDEO  ----*/
@@ -534,6 +539,80 @@ span.heading-separator-horizontal{
 .cta-video-icon-invert:hover {
   border: 5px solid #CCCCCC;
   color: #ad6844;
+}
+
+
+
+/*-----  SERVICE LAYOUTS ----*/
+.service-block-1 {
+  overflow: hidden;
+  background: #fafafa;
+  position: relative;
+  margin: 16px 0px;
+  padding: 0 0 16px 0px;
+}
+.service-block-1 a {
+  display: block;
+}
+.service-block-1 figure {
+  position: relative;
+}
+.service-block-1 figure img {
+  opacity: 0.9;
+}
+
+.service-block-1 .service-content {
+    padding: 24px 12px 24px;
+    position: relative;
+    top: 0;
+    /* left: 0; */
+    background: whitesmoke;
+    width: 87%;
+    margin: -40px auto 0;
+}
+.service-block-1:hover h3:after {
+  background: #67acd7;
+  width: 24px;
+  left: 50%;
+  margin-left: -12px;
+}
+
+a.btn-semi-rounded{
+	
+	border:2px solid #FF0000;
+	background:#fff;
+	border-radius:3px;
+}
+
+a.btn-semi-rounded{
+  border: 0px solid transparent;
+  background: #FF0000;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
+  padding: 14px 32px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: "all" "0.5s" ease-in-out;
+  -moz-transition: "all" "0.5s" ease-in-out;
+  -o-transition: "all" "0.5s" ease-in-out;
+  transition: "all" "0.5s" ease-in-out;
+  margin-bottom: 0;
+  letter-spacing: 0em;
+  overflow: hidden;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+a.btn-semi-rounded:hover {
+  border: 0px solid transparent;
+  color: #FFFFFF;
+  background: #4a4a4a;
 }
 
 /*--------------------------------------------------------------
