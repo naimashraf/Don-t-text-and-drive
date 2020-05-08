@@ -14,7 +14,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">" rel="stylesheet">
+  <link href="<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,18 +38,21 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex">
 
-      <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html">Logo</a></h1>
+      <div class="logo mr-auto text-light">
+		<a class="navbar-brand" href="index.html">         
+		 <img class="img-fluid" src="assets/img/logo1.png" alt="Drive">
+        </a>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#story">Story</a></li>
           <li><a href="#statistic">Statistics</a></li>
+          <li><a href="#posts">Posts</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -59,19 +62,31 @@
   <!-- ======= Hero Section ======= -->
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="home" class="about-section-2 text-center">
       <div class="container">
 
         <div class="row">
           <div class="col-xl-12 col-lg-7" data-aos="fade-right">
-			<div class="title margin-top" data-aos="fade-up">
+			<div class="content margin-top">
 			  <h2>Arrive Alive</h2>
 			  <h4>Don’t Text and drive</h4>
 			  <p>Don't text and drive campaing propose is to persuade young drivers not to text while driving. </p>
 			  <p>We will inform people about the danger of texting and driving.</p>
 			</div>
-          </div>
-		  
+          </div>		  
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+						
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="text-center">
+      <div class="container">
+
+        <div class="row">
 		   <div class="col-xl-12 col-md-12 col-sm-12">
 			     <div class="cta-layout-01 text-center">
 
@@ -79,15 +94,13 @@
 					  <i class="bx bx-caret-right"></i>
 					</a>
 
-				</div> <!-- end .col-md-8 col-sm-12  -->                
-			
+				</div> <!-- end .col-md-8 col-sm-12  -->                	
 			</div> 
 
         </div>
 
       </div>
     </section><!-- End About Section -->
-						
 					
 	
     <!-- ======= Services Section ======= -->
@@ -104,6 +117,8 @@
             <h3 class="sub-title" data-aos="fade-up">Take The Pledhe</h3>
             <p data-aos="fade-up">
               Are you a driver between the age of 15 and 20? Driving is such an exciting and empowering skill… but it’s also a dangerous one. Young drivers like yourself are the most at risk for crashes and one of the main culprits is texting while driving.
+			 <br>
+			 <br>
 			  Protect yourselves and others by pledging not to text and drive. You can help us spread the word and avoid more tragic deaths
 			  by using our free bumper sticker (include an image of the bumper sticker below this section) and
 			  by sharing your stories on Instagram with the hashtag #..... Our bumper stickers are available at your local DMV.
@@ -111,7 +126,7 @@
           </div>	
           <div class="col-xl-4 col-lg-5 pt-5 pt-lg-0">
             <div class="box">
-              <h4 class="box-title">Story-1</h4>
+              <img class="img-fluid" src="assets/img/story1.png" alt="Story1">
             </div>
           </div>
 		</div> 
@@ -159,7 +174,11 @@
           </div>	
           <div class="col-xl-4 col-lg-5 pt-5 pt-lg-0">
             <div class="box">
-              <h4 class="box-title">Story-2</h4>
+              <img class="img-fluid" src="assets/img/story2.png" alt="Story2">
+			  <br>
+			  <br>
+			  <br>
+              <img class="img-fluid" src="assets/img/story3.png" alt="Story3">
             </div>
           </div>		  
 		  
@@ -217,7 +236,61 @@
         </div>
 
        </div>
-    </section><!-- End Statisics Section -->			
+    </section><!-- End Statisics Section -->	
+
+    <!-- ======= Social post ======= -->
+    <section id="posts" class="section-bg">
+      <div class="container">
+
+        <div class="title" data-aos="fade-up">
+          <h2>Social Post</h2>
+		  <span class="heading-separator heading-separator-horizontal"></span>
+        </div>
+
+
+            <div class="row">  
+
+                    <div class="col-lg-6 col-sm-6 col-12">
+
+                        <article class="service-block-1 text-center">
+                            
+                                <figure>
+                                    <img src="assets/img/post1.jpg" alt="service">
+                                    <span class="fa fa-wrench"></span>
+                                </figure>
+
+                                <div class="service-content">
+                                    <a href="#" class="btn-semi-rounded">View Details</a>
+                                </div>
+                            
+                            
+                            
+                        </article>
+
+                    </div> <!--  end .col-lg-4 col-sm-12  -->
+
+                    <div class="col-lg-6 col-sm-6 col-12">
+                        
+                        <article class="service-block-1 text-center">
+                            
+                                <figure>
+                                    <img src="assets/img/post2.jpg" alt="service">
+                                    <span class="fa fa-compress"></span>
+                                </figure>
+ 
+                                <div class="service-content">
+                                     <a href="#" class="btn-semi-rounded">View Details</a>
+                                </div>
+                            
+                        </article>
+
+                    </div> <!--  end .col-lg-4 col-sm-12  -->                  					
+
+             </div>	
+				
+				
+       </div>
+    </section><!-- End Statisics Section -->	
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
